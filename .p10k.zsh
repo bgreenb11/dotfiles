@@ -52,10 +52,10 @@
     # context                 # user@host
     dir                       # current directory
     vcs                       # git status
-    command_execution_time    # previous command duration
+    # command_execution_time  # previous command duration
     # =========================[ Line #2 ]=========================
     newline                   # \n
-    virtualenv                # python virtual environment
+    # virtualenv              # python virtual environment
     prompt_char               # prompt symbol
   )
 
