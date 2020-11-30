@@ -21,6 +21,6 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-alias config='/usr/bin/git --git-dir=/home/ben/.dotfiles/ --work-tree=/home/ben'
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=/home/ben"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
