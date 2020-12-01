@@ -1,4 +1,4 @@
-[submodule "/home/ben/.zsh/zsh-defer"]
+[submodule "$HOME/.zsh/zsh-defer"]
 	path = /home/ben/.zsh/zsh-defer
 	url = https://github.com/romkatv/zsh-defer.git
 	branch = master
