@@ -1,0 +1,36 @@
+[submodule "powerlevel10k"]
+	path = powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+	branch = master
+[submodule "zsh-autosuggestions"]
+	path = zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+	branch = master
+[submodule "fast-syntax-highlighting"]
+	path = fast-syntax-highlighting
+	url = https://github.com/zdharma/fast-syntax-highlighting
+	branch = master
+[submodule "/home/ben/zsh-defer"]
+	path = /home/ben/zsh-defer
+	url = https://github.com/romkatv/zsh-defer.git
+	branch = master
+[submodule "/home/ben/.zsh/zsh-defer"]
+	path = /home/ben/.zsh/zsh-defer
+	url = https://github.com/romkatv/zsh-defer.git
+	branch = master
+[submodule "/home/ben/.zsh/zsh-autosuggestions"]
+	path = /home/ben/.zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+	branch = master
+[submodule "/home/ben/.zsh/fast-syntax-highlighting"]
+	path = /home/ben/.zsh/fast-syntax-highlighting
+	url = https://github.com/zdharma/fast-syntax-highlighting
+	branch = master
+[submodule "/home/ben/.zsh/powerlevel10k"]
+	path = /home/ben/.zsh/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+	branch = master
+[submodule "/home/ben/.zsh/.fzf"]
+	path = /home/ben/.zsh/.fzf
+	url = https://github.com/junegunn/fzf.git
+	branch = master
