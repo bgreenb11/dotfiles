@@ -18,3 +18,11 @@
 	path = /home/ben/.zsh/.fzf
 	url = https://github.com/junegunn/fzf.git
 	branch = master
+[submodule "/home/ben/.zsh/zsh-z"]
+	path = /home/ben/.zsh/zsh-z
+	url = https://github.com/agkozak/zsh-z.git
+	branch = master
+[submodule "/home/ben/.zsh/diff-so-fancy"]
+	path = /home/ben/.zsh/diff-so-fancy
+	url = https://github.com/so-fancy/diff-so-fancy.git
+	branch = master
