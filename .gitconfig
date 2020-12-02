@@ -1,6 +1,5 @@
-[user]
-	email = blg1111@outlook.com
-	name = Benjamin Greenberg
+[include]
+	path = "~/.account_info"
 
 [alias]
 	df = "!df() { \

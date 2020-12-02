@@ -15,6 +15,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=50000
 setopt SHARE_HISTORY
+setopt CORRECT_ALL
 
 # If there is no *.zsh.zwc or it's older than *.zsh, compile *.zsh into *.zsh.zwc.
 source-compiled() {
@@ -65,14 +66,17 @@ alias python="python3"
 alias pip="pip3"
 
 
-# History searching with arrow keys
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
+# zsh-history-substring-search customization
+source-compiled ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bold'
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='fg=red,bold'
 
-bindkey '\e[A' history-beginning-search-backward
-bindkey '\e[B' history-beginning-search-forward
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+
+
 
 autoload -U compinit && compinit

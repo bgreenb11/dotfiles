@@ -1,28 +1,32 @@
 [submodule "$HOME/.zsh/zsh-defer"]
-	path = /home/ben/.zsh/zsh-defer
+	path = $HOME/.zsh/zsh-defer
 	url = https://github.com/romkatv/zsh-defer.git
 	branch = master
-[submodule "/home/ben/.zsh/zsh-autosuggestions"]
-	path = /home/ben/.zsh/zsh-autosuggestions
+[submodule "$HOME/.zsh/zsh-autosuggestions"]
+	path = $HOME/.zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 	branch = master
-[submodule "/home/ben/.zsh/fast-syntax-highlighting"]
-	path = /home/ben/.zsh/fast-syntax-highlighting
+[submodule "$HOME/.zsh/fast-syntax-highlighting"]
+	path = $HOME/.zsh/fast-syntax-highlighting
 	url = https://github.com/zdharma/fast-syntax-highlighting
 	branch = master
-[submodule "/home/ben/.zsh/powerlevel10k"]
-	path = /home/ben/.zsh/powerlevel10k
+[submodule "$HOME/.zsh/powerlevel10k"]
+	path = $HOME/.zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	branch = master
-[submodule "/home/ben/.zsh/.fzf"]
-	path = /home/ben/.zsh/.fzf
+[submodule "$HOME/.zsh/.fzf"]
+	path = $HOME/.zsh/.fzf
 	url = https://github.com/junegunn/fzf.git
 	branch = master
-[submodule "/home/ben/.zsh/zsh-z"]
-	path = /home/ben/.zsh/zsh-z
+[submodule "$HOME/.zsh/zsh-z"]
+	path = $HOME/.zsh/zsh-z
 	url = https://github.com/agkozak/zsh-z.git
 	branch = master
-[submodule "/home/ben/.zsh/diff-so-fancy"]
-	path = /home/ben/.zsh/diff-so-fancy
+[submodule "$HOME/.zsh/diff-so-fancy"]
+	path = $HOME/.zsh/diff-so-fancy
 	url = https://github.com/so-fancy/diff-so-fancy.git
+	branch = master
+[submodule "/home/ben/.zsh/zsh-history-substring-search"]
+	path = /home/ben/.zsh/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search
 	branch = master
