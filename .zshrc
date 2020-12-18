@@ -51,6 +51,11 @@ if (which fd || which fdfind) > /dev/null; then
   export FZF_CRTL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
 
+# Link fzf in vim for fzf.vim to use
+if [ ! -L ~/.vim/pack/git-plugins/start/fzf ]; then
+  ln -s ~/.zsh/fzf ~/.vim/pack/git-plugins/start/fzf
+fi
+
 export FZF_PREVIEW_COMMAND="bat --style=numbers,changes --wrap never --color always {} || cat {} || tree -C {}"
 
 # ZSH-Z

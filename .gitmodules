@@ -14,8 +14,8 @@
 	path = $HOME/.zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	branch = master
-[submodule "$HOME/.zsh/.fzf"]
-	path = $HOME/.zsh/.fzf
+[submodule "$HOME/.zsh/fzf"]
+	path = $HOME/.zsh/fzf
 	url = https://github.com/junegunn/fzf.git
 	branch = master
 [submodule "$HOME/.zsh/zsh-z"]
