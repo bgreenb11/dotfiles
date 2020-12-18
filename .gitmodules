@@ -30,3 +30,27 @@
 	path = /home/ben/.zsh/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
 	branch = master
+[submodule "/home/ben/.vim/pack/git-plugins/start/vim-airline"]
+	path = /home/ben/.vim/pack/git-plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+	branch = master
+[submodule "/home/ben/.vim/pack/git-plugins/start/syntastic"]
+	path = /home/ben/.vim/pack/git-plugins/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+	branch = master
+[submodule "/home/ben/.vim/pack/git-plugins/start/ale"]
+	path = /home/ben/.vim/pack/git-plugins/start/ale
+	url = https://github.com/dense-analysis/ale.git
+	branch = master
+[submodule "/home/ben/.vim/pack/git-plugins/start/vim-airline-themes"]
+	path = /home/ben/.vim/pack/git-plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+	branch = master
+[submodule "/home/ben/.vim/pack/git-plugins/start/fugitive"]
+	path = /home/ben/.vim/pack/git-plugins/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+	branch = master
+[submodule "/home/ben/.vim/pack/git-plugins/start/fzf.vim"]
+	path = /home/ben/.vim/pack/git-plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+	branch = master
