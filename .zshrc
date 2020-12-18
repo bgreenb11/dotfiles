@@ -1,4 +1,10 @@
 
+# Check if query update has been set and prompt for updates if so
+if $QUERY_UPDATE; then
+  ~/.update_dotfiles
+  $QUERY_UPDATE=0
+fi;
+
 source ~/.zsh/zsh-defer/zsh-defer.plugin.zsh
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.

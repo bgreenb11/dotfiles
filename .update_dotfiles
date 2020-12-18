@@ -1,0 +1,28 @@
+#!/bin/sh
+
+OPTIONS=("Update dotfiles and submodules." "Update dotfiles only." "Update submodules only." "Do not update.")
+
+echo "Do you wish to update your dotfiles?"
+select opt in "${OPTIONS[@]}"
+do
+    case $REPLY in 
+        1)
+            echo "Updating dotfiles and submodules..."
+            config pull origin main --recurse-submodules --quiet 
+            break
+            ;;
+        2)
+            echo "Updating dotfiles only..."
+            config pull origin main --quiet
+            break
+            ;;
+        3)
+            echo "Updating submodules only..."
+            config submodule update --remote --recursive -j 4 --quiet
+            break
+            ;;
+        4)
+            break
+            ;;
+    esac
+done
