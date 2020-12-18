@@ -84,7 +84,3 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 
 autoload -U compinit && compinit
-
-
-
-
