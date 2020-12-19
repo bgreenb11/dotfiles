@@ -2,6 +2,7 @@
 	path = "~/.account_info"
 
 [alias]
+	# df can only be used on systems with bat installed
 	df = "!df() { \
 			git status -s \
  			| fzf --no-sort --reverse \
@@ -9,3 +10,14 @@
  			--bind=ctrl-j:preview-down --bind=ctrl-k:preview-up \
  			--preview-window=right:60%:wrap; \
 			}; df"
+	
+	co = checkout
+	cob = checkout -b
+	br = branch
+	brd = branch -default
+	st = status
+	cm = commit -m
+	acm = !git add -A . && git commit -m
+	unstage = reset HEAD -- 
+	undo = reset --soft HEAD~1
+	undof = reset --hard HEAD~1

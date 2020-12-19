@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 OPTIONS=("Update dotfiles and submodules." "Update dotfiles only." "Update submodules only." "Do not update.")
 
