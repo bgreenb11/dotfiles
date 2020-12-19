@@ -1,6 +1,6 @@
 
 # Check if query update has been set and prompt for updates if so
-if [ $QUERY_UPDATE -eq 1 ]; then
+if [[ $QUERY_UPDATE -eq 1 ]]; then
     ~/.update_dotfiles
     export QUERY_UPDATE=0
 fi
