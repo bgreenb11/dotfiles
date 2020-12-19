@@ -46,7 +46,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 bindkey '^I^I' autosuggest-accept
 
-
 # ZSH FSH Configuration
 zsh-defer source-compiled ~/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
@@ -84,6 +83,10 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # Aliases
 alias fd="fdfind"
+alias ls="ls --color"
+alias la="ls -la"
+alias ll="ls -ll"
+alias li="ls -li"
 alias python="python3"
 alias pip="python -m pip"
 alias dj-run='dj-activate; python manage.py runserver'
