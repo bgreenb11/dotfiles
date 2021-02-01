@@ -14,14 +14,14 @@ if [ $? = 0 ]; then
     echo "Checked out config.";
 else
     echo "Backing up pre-existing dotfiles...";
-    config checkout 2>&1 | egrep "\s+\." | awk { 'print $1'} | xargs  -I{} mv ~/.dotfiles_bk/{}
+    config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs  -I{} mv {} ~/.dotfiles_bk/{}
 fi;
 
 config checkout
 config config status.showUntrackedFiles no
 
 echo "Downloading submodules..."
-config submodules update --init --recursive -j 4 --quiet
+config submodule update --init --recursive -j 4 --quiet
 
 # This cronjob will set the QUERY_UPDATE to ask for an update upon login after the first of every month
 crontab -l 2> /dev/null | { cat; echo '* * 1 * * $QUERY_UPDATE=1' } | crontab -
