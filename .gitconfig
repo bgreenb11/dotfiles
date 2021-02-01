@@ -21,3 +21,6 @@
 	unstage = reset HEAD -- 
 	undo = reset --soft HEAD~1
 	undof = reset --hard HEAD~1
+[user]
+	name = bgreenb11
+	email = blg1111@outlook.com

@@ -463,19 +463,19 @@
     " Python Formatting
     " {{{
     :augroup python_
-    :autocmd FileType python :setlocal tabstop=4
-    :autocmd FileType python :setlocal expandtab
-    :autocmd FileType python :setlocal nosmartindent
-    :autocmd FileType python :setlocal complete-=i
-    :autocmd FileType python :iabbrev inport import
-    :autocmd FileType python :autocmd BufRead,BufWrite <buffer> :silent call RemoveTrailingWhiteSpace()
-    :autocmd FileType python :iabbrev <buffer> main <C-R>=PythonMainAbbrev()<CR>
-    :autocmd FileType python :let g:pyindent_open_paren = '&sw'
-	:autocmd FileType python :let g:pyindent_nested_paren = '&sw'
-	:autocmd FileType python :let g:pyindent_continue = '0'
-	:autocmd FileType python :autocmd BufEnter <buffer> :if getline(1) !~ '^#' | call append(0, "#!/usr/bin/env python3") | endif
-	:autocmd FileType python :autocmd CursorMoved,CursorMovedI <buffer> call HighlightAfterColumn(79)
-	:autocmd FileType python :autocmd BufWrite <buffer> :call PythonBlankLineFix()
+	:autocmd FileType python  :setlocal tabstop=4
+	:autocmd FileType python  :setlocal expandtab
+	:autocmd FileType python  :setlocal nosmartindent
+	:autocmd FileType python  :setlocal complete-=i
+	:autocmd FileType python  :iabbrev inport import
+	:autocmd FileType python  :autocmd BufRead,BufWrite <buffer> :silent call RemoveTrailingWhitespace()
+	:autocmd FileType python  :iabbrev <buffer> main <C-R>=PythonMainAbbrev()<CR>
+	:autocmd FileType python  :let g:pyindent_open_paren = '&sw'
+	:autocmd FileType python  :let g:pyindent_nested_paren = '&sw'
+	:autocmd FileType python  :let g:pyindent_continue = '0'
+	:autocmd FileType python  :autocmd BufEnter <buffer> :if getline(1) !~ '^#' | call append(0, "#!/usr/bin/env python3") | endif
+	:autocmd FileType python  :autocmd CursorMoved,CursorMovedI <buffer> call HighlightAfterColumn(79)
+	:autocmd FileType python  :autocmd BufWrite <buffer> :call PythonBlankLineFix()
     :augroup END
     " }}}
 
@@ -661,7 +661,7 @@
         :   endfor
         :   let b:matches = []
         :   if get(g:, "hllonglines", 1) && getline('.') !~ join(s:exclude_patterns, '\|')
-        :       call add(b:matches, matchadd('LongLine', '\%'.line('.').'1\%>'.(a:col).'v.'))
+        :       call add(b:matches, matchadd('LongLine', '\%'.line('.').'l\%>'.(a:col).'v.'))
         :   endif
         :endfunction
 
@@ -706,6 +706,7 @@
         :   if getline('.') =~ '^$'
         :       let l:rtn = 'import sys\n\n\ndef usage():\nprint(\"Usage: ' . expand("%") . '\", file=sys.stderr)\n'
         :       let l:rtn .= "sys.exit(1)\n\n\n\b"
+        :       return l:rtn . "def main():\npass\n\n\nif __name__ == \"__main__\":\nsys.exit(main())"
         :   else
         :       return "main"
         :   endif
