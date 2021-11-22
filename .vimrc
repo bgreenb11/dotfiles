@@ -120,8 +120,8 @@
 
     " Create package dir for plugins for native (Requires Vim 8+)
     :if v:version >= 800
-    :   if !isdirectory($HOME . "/.vim/pack")
-    :       call mkdir($HOME . "/.vim/pack", "p")
+    :   if !isdirectory($HOME . "~/.vim/pack")
+    :       call mkdir($HOME . "~/.vim/pack", "p")
     :   endif
     " If Vim is < ver. 8, make sure vim-plug is installed and add plugins via the plugin manager 
     " Using vim-plug only for compatibility with older versions of Vim
